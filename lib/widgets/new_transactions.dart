@@ -26,6 +26,8 @@ class _NewTransactionState extends State<NewTransaction> {
       inputController.text,
       double.parse(amountController.text),
     );
+
+    Navigator.of(context).pop();
   }
 
   @override
