@@ -1,4 +1,4 @@
-# personal_expenses
+# Personal Expenses Tracker App
 
 A new Flutter project.
 
