@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Personal Expenses App',
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.indigo,
       ),
       home: MyHomePage(),
     );
@@ -86,8 +86,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               color: Colors.transparent,
               width: double.infinity,
-              child: const Card(
-                color: Colors.grey,
+              child: Card(
+                color: Theme.of(context).primaryColor,
                 child: Text('Chart'),
               ),
             ),
