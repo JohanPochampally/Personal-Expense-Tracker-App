@@ -2,9 +2,7 @@
 
 ## Images of the App
 
-![Without Expenditure Records](assets/images/Screenshot_20221001-062640.png "Initial state without transaction records")
-
-![With Expenditure Records](assets/images/Screenshot_20221001-062625.png "App state with transaction records")
+![Without Expenditure Records](assets/images/Screenshot_20221001-062640.png "Initial state without transaction records") ![With Expenditure Records](assets/images/Screenshot_20221001-062625.png "App state with transaction records")
 
 A new Flutter project.
 
