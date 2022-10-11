@@ -4,7 +4,7 @@
 
 ![Without Expenditure Records](assets/images/Screenshot_20221006-064318.png "Initial state without transaction records") ![Add Transaction Modal](assets/images/Screenshot_20221006-064337.png) ![With Expenditure Records](assets/images/Screenshot_20221006-064757.png "App state with transaction records")
 
-A new Flutter project.
+A new Flutter project demonstrating basic application development techniques.
 
 ## Getting Started
 
