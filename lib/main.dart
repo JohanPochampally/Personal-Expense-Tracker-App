@@ -6,6 +6,7 @@ import 'widgets/chart.dart';
 import 'models/transaction.dart';
 
 void main() {
+//   Setting Device Orientation Restrictions
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
@@ -53,6 +54,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+//   model for transactions
   final List<Transaction> _userTransactions = [
     // Transaction(
     //   id: 'One',
@@ -86,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
       amount: txAmount,
       date: chosenDate,
     );
-
+//rebuild the updated widgets
     setState(() {
       _userTransactions.add(newTx);
     });
