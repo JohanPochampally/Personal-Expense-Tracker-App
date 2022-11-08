@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'expense_analysis.dart';
 import 'widgets/new_transactions.dart';
 import 'widgets/transaction_list.dart';
 import 'widgets/chart.dart';
@@ -116,6 +117,30 @@ class _MyHomePageState extends State<MyHomePage> {
     final appBar = AppBar(
       title: const Text('Personal Expenses'),
       actions: <Widget>[
+        SizedBox(
+          height: 5,
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              side: const BorderSide(
+                width: 2.5,
+                color: Colors.white,
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12), // <-- Radius
+              ),
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      ExpenseAnalysis(_recentTransactions, _userTransactions),
+                ),
+              );
+            },
+            child: Text('Check Expense Details'),
+          ),
+        ),
         IconButton(
           onPressed: () => _startAddNewTransaction(context),
           icon: Icon(
